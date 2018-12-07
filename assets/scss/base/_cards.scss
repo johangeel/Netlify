@@ -3,7 +3,8 @@
   box-shadow: $shadow-normal;
   -webkit-box-shadow: $shadow-normal;
   margin-top: 1.5em;
-  margin-bottom: 1.5em;
   border-radius: 0.5em;
   padding: 1.5em;
+  min-width: 264px;
+  @include flex-column();
 }

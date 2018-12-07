@@ -29,7 +29,13 @@ body {
 .container--medium {
     @include grid-container();
     margin: 0px auto;
-    max-width: 1044px;
+    max-width: 488px;
+      @include grid-media($media--tablet) {
+        max-width: 600px;
+    }
+    @include grid-media($media--desktop) {
+      max-width: 1044px;
+  }
 }
 
 .container--small {
@@ -39,3 +45,19 @@ body {
 }
 
 /************ General layout elements*/
+.main{
+  padding: 1em;
+  @include grid-media($media--desktop) {
+    padding: 2em 4em;
+  }
+}
+
+.layout-grid{
+  display: block;
+
+  @include grid-media($media--desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 24px;
+  }
+}
