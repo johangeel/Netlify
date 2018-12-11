@@ -827,6 +827,6 @@ body {
     .layout-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-column-gap: 24px; } }
+      grid-column-gap: 1.5em; } }
 
 /*# sourceMappingURL=styles.css.map */
