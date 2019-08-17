@@ -6,10 +6,6 @@
   @include flex-column();
 }
 
-.flex--between{
-  @include flex-between();
-}
-
 .test {
   @include padding(null 10rem);
 }
