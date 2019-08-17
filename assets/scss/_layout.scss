@@ -5,7 +5,3 @@
 .flex--column{
   @include flex-column();
 }
-
-.test {
-  @include padding(null 10rem);
-}
