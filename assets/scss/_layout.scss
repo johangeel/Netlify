@@ -5,3 +5,12 @@
 .flex--column{
   @include flex-column();
 }
+
+body{
+    @include grid-container();
+    margin: 0px auto;
+    max-width: 488px;
+      @include grid-media($media--tablet) {
+        max-width: 600px;
+    }
+  }

@@ -242,4 +242,15 @@ hr {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
+body {
+  margin: 0px auto;
+  max-width: 488px; }
+  body::after {
+    clear: both;
+    content: "";
+    display: block; }
+  @media only screen and (min-width: 768px) {
+    body {
+      max-width: 600px; } }
+
 /*# sourceMappingURL=styles.css.map */
