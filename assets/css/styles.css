@@ -243,6 +243,7 @@ hr {
   flex-wrap: wrap; }
 
 body {
+  background-color: #F7F7F7;
   box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -263,7 +264,7 @@ body {
     clear: both;
     content: "";
     display: block; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
     body {
       box-sizing: border-box;
       display: -webkit-box;
@@ -281,5 +282,72 @@ body {
       flex-direction: row;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; } }
+
+header {
+  background-color: black;
+  justify-content: space-between;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 1.5rem 2rem; }
+  @media only screen and (min-width: 1024px) {
+    header {
+      width: 380px;
+      padding: 4rem 2rem;
+      box-sizing: border-box;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
+
+@media only screen and (min-width: 1024px) {
+  .mobile-menu {
+    display: none; } }
+
+main {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 4rem 2rem; }
+  @media only screen and (min-width: 1024px) {
+    main {
+      padding: 4rem; } }
 
 /*# sourceMappingURL=styles.css.map */

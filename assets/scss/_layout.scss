@@ -7,9 +7,36 @@
 }
 
 body{
-    @include grid-container();
-    @include flex-column();
-      @include grid-media($media--tablet) {
-        @include flex-row();
-    }
+  background-color: #F7F7F7;
+  @include grid-container();
+  @include flex-column();
+    @include grid-media($media--desktop) {
+      @include flex-row();
   }
+}
+
+header{
+  background-color: black;
+  justify-content: space-between;
+  @include flex-row();
+  @include padding(1.5rem 2rem);
+  @include grid-media($media--desktop) {
+    width: 380px;
+    @include padding(4rem 2rem);
+    @include flex-column();
+  }
+}
+
+.mobile-menu{
+  @include grid-media($media--desktop) {
+    display: none;
+  }
+}
+main{
+  @include flex-column();
+  @include padding(4rem 2rem);
+  @include grid-media($media--desktop) {
+    @include padding(4rem 4rem);
+
+  }
+}
