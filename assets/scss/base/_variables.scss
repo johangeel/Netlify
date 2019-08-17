@@ -1,3 +1,20 @@
+// Media queries
+$media--landscape: (
+media: 550px,
+);
+
+$media--tablet: (
+  media: 768px,
+);
+
+$media--desktop: (
+  media: 1024px,
+);
+
+$media--fullscreen: (
+  media: 1200px,
+);
+
 // Typography
 $base-font-family: $font-stack-system;
 $heading-font-family: $base-font-family;

@@ -1,7 +1,15 @@
-.default-neat-grid {
-  @include grid-container;
+.flex--row{
+  @include flex-row();
 }
 
-.default-neat-grid__a-single-column {
-  @include grid-column(1);
+.flex--column{
+  @include flex-column();
+}
+
+.flex--between{
+  @include flex-between();
+}
+
+.test {
+  @include padding(null 10rem);
 }

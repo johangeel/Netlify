@@ -1,219 +1,84 @@
-/***** 3rd Party Components *****/
-/* stylelint-disable order/properties-alphabetical-order */
-/* stylelint-enable */
-button, [type='button'], [type='reset'], [type='submit'] {
-  appearance: none;
-  background-color: #1565c0;
-  border: 0;
-  border-radius: 3px;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  font-weight: 600;
-  line-height: 1;
-  padding: 0.75em 1.5em;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 150ms ease;
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap; }
-  button:hover, [type='button']:hover, [type='reset']:hover, [type='submit']:hover {
-    background-color: #11519a;
-    color: #fff; }
-  button:focus, [type='button']:focus, [type='reset']:focus, [type='submit']:focus {
-    outline: 3px solid rgba(21, 101, 192, 0.6);
-    outline-offset: 2px; }
-  button:disabled, [type='button']:disabled, [type='reset']:disabled, [type='submit']:disabled {
-    cursor: not-allowed;
-    opacity: 0.5; }
-    button:disabled:hover, [type='button']:disabled:hover, [type='reset']:disabled:hover, [type='submit']:disabled:hover {
-      background-color: #1565c0; }
+/*
+Error: Undefined mixin 'flex-between'.
+        on line 10 of scss/_layout.scss, in `flex-between'
+        from line 10 of scss/_layout.scss
+        from line 8 of scss/styles.scss
 
-fieldset {
-  background-color: transparent;
-  border: 0;
-  margin: 0;
-  padding: 0; }
+5: @import "base/base";
+6: 
+7: /***** Custom Layout Styles *****\/
+8: @import "layout";
 
-legend {
-  font-weight: 600;
-  margin-bottom: 0.375em;
-  padding: 0; }
-
-label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 0.375em; }
-
-input,
-select,
-textarea {
-  display: block;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  font-size: 16px; }
-
-[type='color'], [type='date'], [type='datetime'], [type='datetime-local'], [type='email'], [type='month'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='time'], [type='url'], [type='week'], input:not([type]), textarea {
-  appearance: none;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
-  box-sizing: border-box;
-  margin-bottom: 0.75em;
-  padding: 0.5em;
-  transition: border-color 150ms ease;
-  width: 100%; }
-  [type='color']:hover, [type='date']:hover, [type='datetime']:hover, [type='datetime-local']:hover, [type='email']:hover, [type='month']:hover, [type='number']:hover, [type='password']:hover, [type='search']:hover, [type='tel']:hover, [type='text']:hover, [type='time']:hover, [type='url']:hover, [type='week']:hover, input:not([type]):hover, textarea:hover {
-    border-color: #b1b1b1; }
-  [type='color']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='email']:focus, [type='month']:focus, [type='number']:focus, [type='password']:focus, [type='search']:focus, [type='tel']:focus, [type='text']:focus, [type='time']:focus, [type='url']:focus, [type='week']:focus, input:not([type]):focus, textarea:focus {
-    border-color: #1565c0;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(21, 101, 192, 0.7);
-    outline: none; }
-  [type='color']:disabled, [type='date']:disabled, [type='datetime']:disabled, [type='datetime-local']:disabled, [type='email']:disabled, [type='month']:disabled, [type='number']:disabled, [type='password']:disabled, [type='search']:disabled, [type='tel']:disabled, [type='text']:disabled, [type='time']:disabled, [type='url']:disabled, [type='week']:disabled, input:not([type]):disabled, textarea:disabled {
-    background-color: #f2f2f2;
-    cursor: not-allowed; }
-    [type='color']:disabled:hover, [type='date']:disabled:hover, [type='datetime']:disabled:hover, [type='datetime-local']:disabled:hover, [type='email']:disabled:hover, [type='month']:disabled:hover, [type='number']:disabled:hover, [type='password']:disabled:hover, [type='search']:disabled:hover, [type='tel']:disabled:hover, [type='text']:disabled:hover, [type='time']:disabled:hover, [type='url']:disabled:hover, [type='week']:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover {
-      border: 1px solid #ddd; }
-  [type='color']::placeholder, [type='date']::placeholder, [type='datetime']::placeholder, [type='datetime-local']::placeholder, [type='email']::placeholder, [type='month']::placeholder, [type='number']::placeholder, [type='password']::placeholder, [type='search']::placeholder, [type='tel']::placeholder, [type='text']::placeholder, [type='time']::placeholder, [type='url']::placeholder, [type='week']::placeholder, input:not([type])::placeholder, textarea::placeholder {
-    color: #858585; }
-
-textarea {
-  resize: vertical; }
-
-[type="checkbox"],
-[type="radio"] {
-  display: inline;
-  margin-right: 0.375em; }
-
-[type="file"] {
-  margin-bottom: 0.75em;
-  width: 100%; }
-
-select {
-  margin-bottom: 0.75em;
-  width: 100%; }
-
-[type="checkbox"]:focus,
-[type="radio"]:focus,
-[type="file"]:focus,
-select:focus {
-  outline: 3px solid rgba(21, 101, 192, 0.6);
-  outline-offset: 2px; }
-
-html {
-  background-color: #fff;
-  box-sizing: border-box; }
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit; }
-
-html,
-body {
-  height: 100%; }
-
-body {
-  margin: 0; }
-
-ul,
-ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
-
-dl {
-  margin: 0; }
-
-dt {
-  font-weight: 600;
-  margin: 0; }
-
-dd {
-  margin: 0; }
-
-figure {
-  margin: 0; }
-
-img,
-picture {
-  margin: 0;
-  max-width: 100%; }
-
-table {
-  border-collapse: collapse;
-  margin: 1.5em 0;
-  table-layout: fixed;
-  text-align: left;
-  width: 100%; }
-
-thead {
-  line-height: 1.2;
-  vertical-align: bottom; }
-
-tbody {
-  vertical-align: top; }
-
-tr {
-  border-bottom: 1px solid #ddd; }
-
-th {
-  font-weight: 600; }
-
-th,
-td {
-  padding: 0.75em 0.75em 0.75em 0; }
-
-html {
-  color: #333;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  font-size: 100%;
-  line-height: 1.5; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  font-size: 1.25em;
-  line-height: 1.2;
-  margin: 0 0 0.75em; }
-
-p {
-  margin: 0 0 0.75em; }
-
-a {
-  color: #1565c0;
-  text-decoration-skip: ink;
-  transition: color 150ms ease; }
-  a:hover {
-    color: #104c90; }
-  a:focus {
-    outline: 3px solid rgba(21, 101, 192, 0.6);
-    outline-offset: 2px; }
-
-hr {
-  border-bottom: 1px solid #ddd;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  margin: 1.5em 0; }
-
-/***** Custom Layout Styles *****/
-.default-neat-grid::after {
-  clear: both;
-  content: "";
-  display: block; }
-
-.default-neat-grid__a-single-column {
-  width: calc(8.3333333333% - 21.6666666667px);
-  float: left;
-  margin-left: 20px; }
-
-/*# sourceMappingURL=styles.css.map */
+Backtrace:
+scss/_layout.scss:10:in `flex-between'
+scss/_layout.scss:10
+scss/styles.scss:8
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:98:in `with_mixin'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:329:in `map'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:88:in `block in with_import'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:88:in `with_import'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Users/Johan/.rvm/gems/ruby-2.4.1/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'flex-between'.\A         on line 10 of scss/_layout.scss, in `flex-between'\A         from line 10 of scss/_layout.scss\A         from line 8 of scss/styles.scss\A \A 5: @import \"base/base\";\A 6: \A 7: /***** Custom Layout Styles *****/\A 8: @import \"layout\";"; }
