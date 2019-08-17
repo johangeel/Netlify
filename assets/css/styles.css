@@ -206,5 +206,14 @@ hr {
   margin: 1.5em 0; }
 
 /***** Custom Layout Styles *****/
+.default-neat-grid::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.default-neat-grid__a-single-column {
+  width: calc(8.3333333333% - 21.6666666667px);
+  float: left;
+  margin-left: 20px; }
 
 /*# sourceMappingURL=styles.css.map */
