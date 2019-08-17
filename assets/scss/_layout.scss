@@ -8,8 +8,7 @@
 
 body{
     @include grid-container();
-    margin: 0px auto;
-    max-width: 488px;
+    @include flex-column();
       @include grid-media($media--tablet) {
         @include flex-row();
     }
