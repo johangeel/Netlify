@@ -27,5 +27,6 @@ a{
   text-decoration: none;
   &:hover {
     color: shade($action-color, 25%);
+    text-decoration: underline;
   }
 }
