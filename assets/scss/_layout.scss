@@ -5,3 +5,21 @@
 h1{
   font-weight: 400;
 }
+
+nav{
+  @include flex-row();
+  height: 100px;
+  align-items: center;
+  padding-left: 8em;
+  padding-right: 8em;
+  >a{
+    margin-right: 1em;
+  }
+}
+
+a{
+  text-decoration: none;
+  &:hover {
+    color: shade($action-color, 25%);
+  }
+}
