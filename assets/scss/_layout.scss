@@ -10,10 +10,16 @@ nav{
   @include flex-row();
   height: 100px;
   align-items: center;
-  padding-left: 8em;
-  padding-right: 8em;
+  justify-content: center;
+  flex-wrap: wrap;
+  @include grid-media($media--tablet) {
+    padding-left: 8em;
+    padding-right: 8em;
+    justify-content: flex-start;
+  }
   >a{
     margin-right: 1em;
+    margin-left: 1em;
   }
 }
 

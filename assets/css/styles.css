@@ -317,10 +317,16 @@ nav {
   flex-direction: row;
   height: 100px;
   align-items: center;
-  padding-left: 8em;
-  padding-right: 8em; }
+  justify-content: center;
+  flex-wrap: wrap; }
+  @media only screen and (min-width: 768px) {
+    nav {
+      padding-left: 8em;
+      padding-right: 8em;
+      justify-content: flex-start; } }
   nav > a {
-    margin-right: 1em; }
+    margin-right: 1em;
+    margin-left: 1em; }
 
 a {
   text-decoration: none; }
