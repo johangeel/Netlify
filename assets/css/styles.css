@@ -295,7 +295,7 @@ small, .milli {
 
 /***** Custom Layout Styles *****/
 .main {
-  padding: 1em;
+  padding: 2em;
   box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
