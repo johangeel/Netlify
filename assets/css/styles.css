@@ -295,7 +295,24 @@ small, .milli {
 
 /***** Custom Layout Styles *****/
 .main {
-  padding: 8em; }
+  padding: 1em;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto; }
 
 h1 {
   font-weight: 400; }
