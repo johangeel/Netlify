@@ -34,3 +34,11 @@ a{
     text-decoration: underline;
   }
 }
+
+.404page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
