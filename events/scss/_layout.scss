@@ -1,0 +1,92 @@
+html{
+  background-color: #f7f7f7;
+}
+
+nav{
+  @include flex-row();
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  @include grid-media($media--tablet) {
+    padding-left: 8em;
+    padding-right: 8em;
+    justify-content: flex-start;
+  }
+}
+
+.page{
+  @include flex-column();
+  flex-wrap: wrap;
+  @include grid-media($media--tablet) {
+    @include flex-row();
+  }
+}
+
+.card{
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);
+  border-radius: .3em;
+  border-top: solid 2px #f5f7f9;
+  box-sizing: border-box;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 6px;
+  width: auto;
+  @include grid-media($media--tablet) {
+    flex: 0 1 auto;
+    width: calc(50% - 12px);
+  }
+  @include grid-media($media--desktop) {
+    flex: 0 1 auto;
+    width: calc(25% - 12px);
+  }
+}
+
+.card--header{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 40px;
+  position: relative;
+  border-bottom: solid 2px #f5f7f9;
+}
+
+.card--main{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 120px;
+  position: relative;
+  border-bottom: solid 2px #f5f7f9;
+}
+
+.card--footer{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: flex-end;
+  height: 50px;
+  padding: 1em;
+  position: relative;
+  >a{
+    margin-left: 1em;
+  }
+}
