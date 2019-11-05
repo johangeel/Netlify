@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900);
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  background: #262626;
+  font-family: "Work Sans", sans-serif;
+  max-height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.poster {
+  float: right;
+  height: 100vh;
+  max-width: 40%;
+}
+
+.cont {
+  float: left;
+  max-width: 60%;
+  height: 100vh;
+}
+
+.topbar {
+  padding-top: 20px;
+  padding-left: 50px;
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.logo {
+  grid-column: 1 / 2;
+}
+
+.logo>img {
+  width: 250px;
+}
+
+.clock-wrapper {
+  height: 135px;
+  grid-column: 3 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  color: white;
+  font-size: 80px;
+}
+
+.activities {
+  margin-left: 50px;
+  margin-top: 50px;
+  padding: 0;
+  color: #DAE1E3;
+  list-style: none;
+  overflow-y: hidden;
+  max-height: 70%
+}
+
+.activity {
+  padding: 40px;
+  max-width: 90%;
+  transition: background .5s;
+}
+
+.activity h1 {
+  font-size: 2.5em;
+  margin-bottom: .2em;
+  margin-top: 0;
+}
+
+.activity time {
+  display: inline-block;
+  padding-right: 20px;
+  font-size: 1.4em
+}
+
+.activity.active {
+  background: #161616;
+}
