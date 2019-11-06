@@ -317,7 +317,8 @@ html {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
-  flex: 1 1 auto; }
+  flex: 1 1 auto;
+  justify-content: center; }
 
 .container--events {
   box-sizing: border-box;
@@ -484,7 +485,8 @@ html {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  padding: 0 1em 0 1em; }
   .topbar > img {
     max-height: 120px;
     margin-right: 1em;
