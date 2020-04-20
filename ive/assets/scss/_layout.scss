@@ -1,0 +1,48 @@
+.main{
+  padding: 2em;
+  @include flex-column();
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1{
+  font-weight: 400;
+}
+
+nav{
+  @include flex-row();
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  @include grid-media($media--tablet) {
+    padding-left: 8em;
+    padding-right: 8em;
+    justify-content: flex-start;
+  }
+  >a{
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+}
+
+a{
+  text-decoration: none;
+  &:hover {
+    color: shade($action-color, 25%);
+    text-decoration: underline;
+  }
+}
+
+.page-oops{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+body{
+  @include flex-column();
+}
