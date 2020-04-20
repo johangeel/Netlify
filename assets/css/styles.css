@@ -407,3 +407,10 @@ a:hover {
   height: 100%;
   justify-content: center;
 }
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+}

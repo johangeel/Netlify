@@ -42,3 +42,7 @@ a{
   height: 100%;
   justify-content: center;
 }
+
+body{
+  @include flex-column();
+}
