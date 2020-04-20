@@ -10,52 +10,11 @@
   <script>
     function GEEKFORGEEKS()
   {
-  	var name = document.forms["RegForm"]["Name"];
-  	var email = document.forms["RegForm"]["EMail"];
-  	var phone = document.forms["RegForm"]["Telephone"];
-  	var what = document.forms["RegForm"]["Subject"];
-  	var password = document.forms["RegForm"]["Password"];
-  	var address = document.forms["RegForm"]["Address"];
-
-  	if (name.value == "")
+  	var name = document.forms["form"]["Name"];
+  	if (name.value !== "1")
   	{
-  		window.alert("Please enter your name.");
+  		window.alert("Fout");
   		name.focus();
-  		return false;
-  	}
-
-  	if (address.value == "")
-  	{
-  		window.alert("Please enter your address.");
-  		address.focus();
-  		return false;
-  	}
-
-  	if (email.value == "")
-  	{
-  		window.alert("Please enter a valid e-mail address.");
-  		email.focus();
-  		return false;
-  	}
-
-  	if (phone.value == "")
-  	{
-  		window.alert("Please enter your telephone number.");
-  		phone.focus();
-  		return false;
-  	}
-
-  	if (password.value == "")
-  	{
-  		window.alert("Please enter your password");
-  		password.focus();
-  		return false;
-  	}
-
-  	if (what.selectedIndex < 1)
-  	{
-  		alert("Please enter your course.");
-  		what.focus();
   		return false;
   	}
 
@@ -70,9 +29,9 @@
   </nav>
   <div class="center">
     <h1>Puzzel 1</h1>
-    <form action="route" method="post">
-      <input type="number" name="number" required>
-      <input type="submit" value="CHECK!">
+    <form name="form" action="/1succes.php" onsubmit="return GEEKFORGEEKS()" method="post">
+      <input type="text" size=65 name="Name">
+      <input type="submit" value="send" name="Submit">
     </form>
   </div>
 </body>
