@@ -11,10 +11,9 @@
     function GEEKFORGEEKS()
   {
   	var name = document.forms["form"]["Name"];
-
-  	if (name.value == "")
+  	if (name.value !== "1")
   	{
-  		window.alert("Please enter your name.");
+  		window.alert("Fout");
   		name.focus();
   		return false;
   	}
