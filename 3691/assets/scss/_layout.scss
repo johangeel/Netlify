@@ -46,3 +46,7 @@ a{
 body{
   @include flex-column();
 }
+
+form{
+  @include flex-column();
+}
