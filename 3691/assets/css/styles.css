@@ -370,6 +370,7 @@ small, .milli {
 
 h1 {
   font-weight: 400;
+  font-size: 3em;
 }
 
 nav {
@@ -396,7 +397,6 @@ nav > a {
 
 a {
   text-decoration: none;
-  font-size: 3em;
 }
 a:hover {
   color: #262626;

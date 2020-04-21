@@ -8,6 +8,7 @@
 
 h1{
   font-weight: 400;
+  font-size: 3em;
 }
 
 nav{
@@ -29,7 +30,6 @@ nav{
 
 a{
   text-decoration: none;
-  font-size: 3em;
   &:hover {
     color: shade($action-color, 25%);
     text-decoration: underline;
