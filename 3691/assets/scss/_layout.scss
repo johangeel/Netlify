@@ -7,6 +7,9 @@
   align-items: center;
 }
 
+.line{
+
+}
 h1{
   font-weight: 400;
   font-size: 3em;
@@ -36,11 +39,6 @@ a{
   }
 }
 
-img{
-  border-radius: 0.5em;
-  box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);
-  -webkit-box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.35);
-}
 .center{
   display: flex;
   flex-direction: column;
@@ -54,14 +52,20 @@ form{
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  width: 100px;
+  width: 200px;
 }
 
 .question--text{
   width: 320px;
-  margin-bottom: 8em;
+  margin-bottom: 16em;
 }
 
 .question--image{
-  margin-bottom: 8em;
+  margin-bottom: 16em;
+  > img{
+    border-radius: 0.5em;
+    box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.35);
+  }
+
 }

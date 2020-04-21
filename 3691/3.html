@@ -15,9 +15,9 @@
     function GEEKFORGEEKS()
   {
   	var name = document.forms["form"]["Name"];
-  	if (name.value !== "1")
+  	if (name.value !== "Arnhem")
   	{
-  		window.alert("Je antwoord is helaas niet goed :(");
+  		window.alert("Je antwoord is helaas niet goed :(. Denk je aan hoofdletters?");
   		name.focus();
   		return false;
   	}
@@ -31,10 +31,14 @@
   <nav>
     <a href="/3691">Terug</a>
   </nav>
-  <div class="center">
-    <h1>Puzzel 1</h1>
-    <form name="form" action="/1succes.php" onsubmit="return GEEKFORGEEKS()" method="post">
-      <input type="number" name="Name">
+  <div class="main">
+    <div class="question--text">
+      <h1>Raad de stad</h1>
+      <p>29 november 2019: het Unitas-gala. Wat een enerverende avond was dat! Maar ten noorden van welke stad speelde het gala zich eigenlijk af?</p>
+    </div>
+    <div class="question--image"><img src="assets/images/unitasgala.jpeg" alt=""></div>
+    <form name="form" action="/1succes.html" onsubmit="return GEEKFORGEEKS()" method="post">
+      <input type="text" name="Name">
       <input type="submit" value="Check" name="Submit">
     </form>
   </div>
