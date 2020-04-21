@@ -9,17 +9,24 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/images/favicon.png" type="image/png" sizes="16x16">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
   <nav>
   </nav>
   <div class="center">
-    <h1><a href="./1">Puzzel 1</a></h1>
-    <h1><a href="./2">Puzzel 2</a></h1>
-    <h1><a href="./3">Puzzel 3</a></h1>
+    <h1 data-aos="fade-in" data-aos-delay="0"><a href="./1">Puzzel 1</a></h1>
+    <h1 data-aos="fade-in" data-aos-delay="800"><a href="./2">Puzzel 2</a></h1>
+    <h1 data-aos="fade-in" data-aos-delay="1600"><a href="./3">Puzzel 3</a></h1>
   </div>
   <footer></footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 2500,
+    })
+  </script>
 </body>
 
 </html>
