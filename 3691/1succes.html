@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Johangeel.com - Johan Geel</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/images/favicon.png" type="image/png" sizes="16x16">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script>
+    function GEEKFORGEEKS()
+  {
+  	var name = document.forms["form"]["Name"];
+  	if (name.value !== "1928")
+  	{
+  		window.alert("Je antwoord is helaas niet goed :(. Denk je aan hoofdletters?");
+  		name.focus();
+  		return false;
+  	}
+
+  	return true;
+  }</script>
+
+</head>
+
+<body data-aos="fade-in">
+  <nav>
+    <a href="/3691">Terug</a>
+  </nav>
+  <div class="main">
+    <div class="question--text">
+      <h1>Stampuuhh</h1>
+      <p>25 december 2019! Top 2000 Café! Dat was lachen, man. Wij lekker aan het stampen enzo. Goeie tijden!</p>
+    </div>
+    <div class="question--image">
+      <video loop controls>
+        <source src="assets/images/happy.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <form name="form" action="/2succes.html" onsubmit="return GEEKFORGEEKS()" method="post">
+      <div class="form--text">
+        <i>Op welk nummer is dit liedje geëindigd in de Top 2000?</i>
+      </div>
+      <div class="form--input">
+        <input type="number" name="Name">
+        <input type="submit" value="Check" name="Submit">
+      </div>
+    </form>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+    })
+  </script>
+</body>
+
+</html>
