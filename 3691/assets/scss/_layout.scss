@@ -52,7 +52,13 @@ form{
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  width: 200px;
+  width: 320px;
+}
+.form--text{
+  margin-bottom: 2em;
+}
+.form--input{
+  @include flex-column();
 }
 
 .question--text{
