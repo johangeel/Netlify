@@ -391,13 +391,13 @@ nav {
   }
 }
 nav > a {
+  font-size: 2em;
   margin-right: 1em;
   margin-left: 1em;
 }
 
 a {
   text-decoration: none;
-  font-size: 2em;
 }
 a:hover {
   color: #262626;
