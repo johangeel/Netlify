@@ -238,6 +238,7 @@ a {
   -webkit-text-decoration-skip: ink;
           text-decoration-skip: ink;
   transition: color 150ms ease;
+  font-family: "Tangerine", cursive;
 }
 a:hover {
   color: #262626;
@@ -395,6 +396,7 @@ nav > a {
 
 a {
   text-decoration: none;
+  font-size: 3em;
 }
 a:hover {
   color: #262626;

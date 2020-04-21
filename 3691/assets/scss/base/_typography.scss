@@ -26,6 +26,7 @@ a {
   color: $action-color;
   text-decoration-skip: ink;
   transition: color $base-duration $base-timing;
+  font-family: 'Tangerine', cursive;
 
   &:hover {
     color: shade($action-color, 25%);
