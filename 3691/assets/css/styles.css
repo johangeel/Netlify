@@ -98,7 +98,7 @@ textarea {
   border: 1px solid #ddd;
 }
 [type=color]::placeholder, [type=date]::placeholder, [type=datetime]::placeholder, [type=datetime-local]::placeholder, [type=email]::placeholder, [type=month]::placeholder, [type=number]::placeholder, [type=password]::placeholder, [type=search]::placeholder, [type=tel]::placeholder, [type=text]::placeholder, [type=time]::placeholder, [type=url]::placeholder, [type=week]::placeholder, input:not([type])::placeholder, textarea::placeholder {
-  color: #a3a3a3;
+  color: #858585;
 }
 
 textarea {
@@ -210,7 +210,7 @@ td {
 }
 
 html {
-  color: #666;
+  color: #333;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   font-size: 100%;
   line-height: 1.5;
@@ -226,6 +226,7 @@ h6 {
   font-size: 1.25em;
   line-height: 1.2;
   margin: 0 0 0.75em;
+  font-family: "Tangerine", cursive;
 }
 
 p {
