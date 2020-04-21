@@ -36,6 +36,11 @@ a{
   }
 }
 
+img{
+  border-radius: 0.5em;
+  box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.35);
+}
 .center{
   display: flex;
   flex-direction: column;
@@ -58,5 +63,5 @@ form{
 }
 
 .question--image{
-  margin-bottom: 4em;
+  margin-bottom: 8em;
 }
