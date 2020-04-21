@@ -441,7 +441,7 @@ form {
 .question--image {
   margin-bottom: 16em;
 }
-.question--image > img {
+.question--image > img, .question--image video {
   border-radius: 0.5em;
   box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12);
   -webkit-box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.35);
