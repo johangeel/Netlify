@@ -10,31 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/images/favicon.png" type="image/png" sizes="16x16">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script>
-    function GEEKFORGEEKS() {
-      var name = document.forms["form"]["Name"];
-      if (name.value !== "157") {
-        window.alert("Je antwoord is helaas niet goed :(. Probeer opnieuw.");
-        name.focus();
-        return false;
-      }
-
-      return true;
-    }
-  </script>
 </head>
 
 <body>
   <div class="center" data-aos="fade-in">
-    <form name="form" action="/vragen.html" onsubmit="return GEEKFORGEEKS()" method="post">
-      <div class="form--text">
-        <i>Ten noorden van welke stad speelde het gala zich eigenlijk af?</i>
-      </div>
-      <div class="form--input">
-        <input type="number" name="Name">
-        <input type="submit" value="Check" name="Submit">
-      </div>
-    </form>
+    <h1><a href="./1">Raad de stad</a></h1>
+    <h1><a href="./2">Stampuuhh</a></h1>
+    <h1><a href="./3">Onze afgelopen maanden</a></h1>
   </div>
   <footer></footer>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
