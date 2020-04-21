@@ -1,7 +1,6 @@
 .main{
   padding: 2em;
   @include flex-column();
-  max-width: 620px;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -14,6 +13,12 @@ h1{
   font-weight: 400;
   font-size: 3em;
 }
+
+img, video{
+  border-radius: 0.5em;
+  box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.35);
+  }
 
 nav{
   @include flex-row();
@@ -68,10 +73,19 @@ form{
 
 .question--image{
   margin-bottom: 16em;
-  > img, video{
-    border-radius: 0.5em;
-    box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);
-    -webkit-box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.35);
-  }
+  max-width: 620px;
+}
 
+.image--item{
+    max-width: 150px;
+    margin: 1em;
+    @include flex-column();
+    align-items: center;
+}
+
+.grid{
+  justify-content: center;
+  @include flex-row();
+  flex-wrap: wrap;
+  max-width: 100%;
 }

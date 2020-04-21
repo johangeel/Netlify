@@ -363,7 +363,6 @@ small, .milli {
   display: flex;
   flex: 0 1 auto;
   flex-direction: column;
-  max-width: 620px;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -372,6 +371,12 @@ small, .milli {
 h1 {
   font-weight: 400;
   font-size: 3em;
+}
+
+img, video {
+  border-radius: 0.5em;
+  box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.35);
 }
 
 nav {
@@ -440,9 +445,25 @@ form {
 
 .question--image {
   margin-bottom: 16em;
+  max-width: 620px;
 }
-.question--image > img, .question--image video {
-  border-radius: 0.5em;
-  box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12);
-  -webkit-box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.35);
+
+.image--item {
+  max-width: 150px;
+  margin: 1em;
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid {
+  justify-content: center;
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
 }
