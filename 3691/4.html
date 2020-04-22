@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Johangeel.com - Johan Geel</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/images/favicon.png" type="image/png" sizes="16x16">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script>
+    function GEEKFORGEEKS()
+  {
+  	var name = document.forms["form"]["Name"];
+  	if (name.value !== "G5ZJ93")
+  	{
+  		window.alert("Je antwoord is helaas niet goed :(. Denk je aan hoofdletters?");
+  		name.focus();
+  		return false;
+  	}
+
+  	return true;
+  }</script>
+
+</head>
+
+<body data-aos="fade-in">
+  <nav>
+    <a href="vragen">Terug naar de vragen</a>
+  </nav>
+  <div class="main">
+    <div class="question--text">
+      <h1>Onze afgelopen maanden</h1>
+      <p>Afgelopen maanden hebben we toch wel wat mooie kiekjes verzameld over ons. Zie hieronder. Aan jou de taak de juiste chronologische volgorde in te vullen!</p>
+    </div>
+    <div class="question--image grid" style="margin: 0">
+      <div class="image--item">
+        <img src="assets/images/volgorde/2.jpeg" alt="">
+        <b>5</b>
+      </div>
+      <div class="image--item">
+        <img src="assets/images/volgorde/4.jpg" alt="">
+        <b>J</b>
+      </div>
+      <div class="image--item">
+        <img src="assets/images/volgorde/1.jpeg" alt="">
+        <b>G</b>
+      </div>
+    </div>
+    <div class="question--image grid">
+      <div class="image--item">
+        <img src="assets/images/volgorde/6.jpeg" alt="">
+        <b>3</b>
+      </div>
+      <div class="image--item">
+        <img src="assets/images/volgorde/3.jpeg" alt="">
+        <b>Z</b>
+      </div>
+      <div class="image--item">
+        <img src="assets/images/volgorde/5.jpeg" alt="">
+        <b>9</b>
+      </div>
+    </div>
+    <form name="form" action="3succes.html" onsubmit="return GEEKFORGEEKS()">
+      <div class="form--text">
+        <i>Wat is de juiste chronologische volgorde van de foto's?</i>
+      </div>
+      <div class="form--input">
+        <input type="text" name="Name">
+        <input type="submit" value="Check" name="Submit">
+      </div>
+    </form>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+    })
+  </script>
+</body>
+
+</html>

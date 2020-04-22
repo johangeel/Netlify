@@ -21,6 +21,17 @@
       return true;
     }
   </script>
+  <script>
+    function GEEKFORGEEKSS() {
+      var name = document.forms["form2"]["Final"];
+      if (name.value !== "2") {
+        window.alert("Je antwoord is helaas niet goed :(. Probeer opnieuw.");
+        name.focus();
+        return false;
+      }
+      return true;
+    }
+  </script>
 </head>
 
 <body>
@@ -28,6 +39,13 @@
     <form name="form" action="vragen.html" onsubmit="return GEEKFORGEEKS()">
       <div class="form--input">
         <input type="number" name="Name">
+        <input type="submit" value="Check" name="Submit">
+      </div>
+    </form>
+    <div class="filler"></div>
+    <form name="form2" action="vragen.html" onsubmit="return GEEKFORGEEKSS()">
+      <div class="form--input">
+        <input type="number" name="Final">
         <input type="submit" value="Check" name="Submit">
       </div>
     </form>
