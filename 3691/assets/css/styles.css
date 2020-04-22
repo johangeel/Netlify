@@ -385,6 +385,7 @@ nav {
   flex: 0 1 auto;
   flex-direction: row;
   height: 100px;
+  width: 100%;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
