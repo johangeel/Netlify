@@ -57,7 +57,6 @@ form{
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 4em;
   width: 320px;
 }
 
@@ -67,6 +66,12 @@ form{
 
 .form--input{
   @include flex-column();
+}
+
+.form--group{
+  @include flex-column();
+  justify-content: space-evenly;
+  height: 100%;
 }
 
 .question--text{

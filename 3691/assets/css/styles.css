@@ -424,7 +424,6 @@ form {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 4em;
   width: 320px;
 }
 
@@ -437,6 +436,15 @@ form {
   display: flex;
   flex: 0 1 auto;
   flex-direction: column;
+}
+
+.form--group {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
 }
 
 .question--text {
