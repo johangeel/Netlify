@@ -89,3 +89,7 @@ form{
   flex-wrap: wrap;
   max-width: 100%;
 }
+
+.nav--bottom{
+  @include flex-column();
+}
