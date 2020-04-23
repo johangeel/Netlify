@@ -24,7 +24,11 @@
 
   	return true;
   }</script>
-
+  <script src="//cdn.jsdelivr.net/npm/lozad"></script>
+  <script>
+    const observer = lozad();
+    observer.observe();
+  </script>
 </head>
 
 <body data-aos="fade-in">
@@ -37,7 +41,7 @@
       <p>25 december 2019! Top 2000 Café! Dat was lachen, man. Wij lekker aan het stampen enzo. Goeie tijden!</p>
     </div>
     <div class="question--image">
-      <video loop controls>
+      <video class="lozad" loop controls>
         <source src="assets/images/happy.mp4" type="video/mp4" />
       </video>
     </div>
