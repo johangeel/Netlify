@@ -24,8 +24,8 @@
   <script>
     function GEEKFORGEEKSS() {
       var name = document.forms["form2"]["Final"];
-      if (name.value !== "2") {
-        window.alert("Je antwoord is helaas niet goed :(. Probeer opnieuw.");
+      if (name.value !== "1592EE51QS88X94") {
+        window.alert("Je antwoord is helaas niet goed :(. Denk je aan hoofdletters?");
         name.focus();
         return false;
       }
@@ -42,9 +42,9 @@
         <input type="submit" value="Check">
       </div>
     </form>
-    <form name="form2" action="4.html" onsubmit="return GEEKFORGEEKSS()">
+    <form name="form2" action="final.html" onsubmit="return GEEKFORGEEKSS()">
       <div class="form--input" data-aos="fade-in" data-aos-delay="950">
-        <input type="number" name="Final">
+        <input type="text" name="Final">
         <input type="submit" value="Check">
       </div>
     </form>
