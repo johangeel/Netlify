@@ -62,7 +62,14 @@
 		}(window, document, window._wpemojiSettings);
 	</script>
 	<style>
-		.wp-container-1{height:500px;}
+		.wp-container-1 {
+	  flex-wrap: wrap !important;
+	}
+	@media screen and (min-width:767px) {
+	 .wp-container-1 {
+		 flex-wrap: nowrap !important;
+	}
+
 </style>
 	<style>img.wp-smiley,
 img.emoji {
