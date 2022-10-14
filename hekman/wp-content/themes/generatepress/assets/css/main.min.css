@@ -1363,13 +1363,3 @@ nav.toggled ul ul.sub-menu {
     display: none !important
   }
 }
-
-.wp-container-1 {
-  flex-wrap: wrap;
-}
-
-@media screen and (min-width:767px) {
-  .wp-container-1 {
-    flex-wrap: nowrap;
-  }
-}
