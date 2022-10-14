@@ -1364,7 +1364,7 @@ nav.toggled ul ul.sub-menu {
   }
 }
 
-@media (min-width:769px) {
+@media screen and (min-width:767px) {
   .wp-container-1 {
     flex-wrap: nowrap;
   }
